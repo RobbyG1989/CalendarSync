@@ -2,6 +2,7 @@
 """
 Calendar Sync Script
 A tool to synchronize events between Google Calendar and iCloud Calendar
+Version: 1.0.0
 """
 
 import os
@@ -19,6 +20,7 @@ from src.config import Config
 load_dotenv()
 
 @click.group()
+@click.version_option(version='1.0.0', prog_name='Calendar Sync')
 def cli():
     """Calendar synchronization tool for Google Calendar and iCloud."""
     pass
